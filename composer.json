@@ -7,7 +7,6 @@
     "require": {
         "backpack/pro": "^2.0"
     },
-    "scripts": {
     "minimum-stability": "stable",
     "prefer-stable": true
 }
