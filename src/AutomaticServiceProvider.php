@@ -34,7 +34,6 @@ trait AutomaticServiceProvider
      */
     public function boot(): void
     {
-        dd('here');
         $this->autoboot();
     }
 
