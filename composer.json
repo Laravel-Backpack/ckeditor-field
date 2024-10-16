@@ -1,12 +1,23 @@
 {
     "name": "backpack/ckeditor-field",
-    "type": "project",
     "description": "CKEditor field for Backpack",
     "keywords": ["laravel", "backpack"],
     "license": "MIT",
     "require": {
         "backpack/pro": "^2.0"
     },
+    "autoload": {
+        "psr-4": {
+            "Backpack\\CkeditorField\\": "src/"
+        }
+    },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Backpack\\CkeditorField\\BackpackCkeditorFieldProvider"
+            ]
+        }
+    }
 }
