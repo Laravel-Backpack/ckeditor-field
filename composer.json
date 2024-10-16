@@ -1,0 +1,13 @@
+{
+    "name": "backpack/ckeditor-field",
+    "type": "project",
+    "description": "CKEditor field for Backpack",
+    "keywords": ["laravel", "backpack"],
+    "license": "MIT",
+    "require": {
+        "backpack/pro": "^2.0"
+    },
+    "scripts": {
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
