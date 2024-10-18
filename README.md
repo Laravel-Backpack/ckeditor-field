@@ -21,7 +21,31 @@ In your CrudController, use the `CKEditor` field type:
 CRUD::field('content')->type('ckeditor');
 ```
 
-Find more information on how to use this field in the [official Backpack for Laravel documentation](https://backpackforlaravel.com/docs/6.x/crud-fields#ckeditor).
+You can customize most of CKEditor's options:
+
+```php
+CRUD::field([   // CKEditor
+    'name'          => 'content',
+    'type'          => 'ckeditor',
+
+    // optional:
+    'options'       => [
+        'autoGrow_minHeight'   => 200,
+        'autoGrow_bottomSpace' => 50,
+        'removePlugins'        => [],
+    ],
+
+    // elfinder configuration options when using [the file manager package](https://github.com/Laravel-Backpack/FileManager)
+    // to use this feature you need to be running backpack/pro:2.2.1 or higher and backpack/filemanager:3.0.8 or higher
+    'elfinderOptions' => [], // it's the same as `true`, will enable with default options, by default is: `false`
+]);
+```
+
+If you'd like to be able to select files from elFinder, you need to install [Backpack/FileManager](https://github.com/Laravel-Backpack/FileManager) package and enable it in your field: `elfinderOptions => true`.
+
+## Custom Builds
+
+Custom builds are not supported at the moment. If you need a custom build, you should publish the field to your own `resources/views/vendor/backpack/ckeditor-field/fields/ckeditor.blade.php` and modify it as needed.
 
 ## License
 
