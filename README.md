@@ -7,6 +7,8 @@
 
 A CKEditor field type for [Laravel Backpack](https://backpackforlaravel.com), using the [CKEditor](https://ckeditor.com/) WYSIWYG editor.
 
+// TODO: screenshot
+
 ## Install
 
 To install this package via Composer, run this command:
