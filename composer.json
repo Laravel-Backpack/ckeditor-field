@@ -4,14 +4,14 @@
     "keywords": ["laravel", "backpack"],
     "license": "MIT",
     "require": {
-        "backpack/crud": "^6.0"
+        "backpack/crud": "7.0.0-alpha.1"
     },
     "autoload": {
         "psr-4": {
             "Backpack\\CkeditorField\\": "src/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "laravel": {
